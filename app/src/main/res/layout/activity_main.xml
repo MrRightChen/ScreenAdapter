@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ly.chen.screenadapter.MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="未做适配"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/screen"
+                android:text="分辨率："
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="#ccc"
+
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="#ccc"
+                />
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="#ccc"
+
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_120"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/noAdapterHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="最右边的区域高度："
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAccent"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_margin="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <com.empsun.cd.screenlibrary.layout.AdapterRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="#ccc"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="#ccc"
+
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="#ccc"
+
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="120dp"
+                />
+            <com.empsun.cd.screenlibrary.layout.AdapterLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/adapterHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="最右边的区域高度："
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAccent"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+            </com.empsun.cd.screenlibrary.layout.AdapterLinearLayout>
+
+
+
+
+
+        </com.empsun.cd.screenlibrary.layout.AdapterRelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="已做适配"
+
+            android:gravity="center_vertical"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

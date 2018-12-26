@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ScreenAdapter</string>
+    <string name="title_activity_no_adapter">NoAdapterActivity</string>
+</resources>
